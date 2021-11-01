@@ -1,23 +1,31 @@
 # Learning Javascript
 
+### Contents
+
+1. [Refer elements from HTML](#refer-elements-from-html)
+2. [Difference between var, let and const](#difference-between-var-let-and-const)
+3. [Local Storage vs Session Storage vs Cookies](#local-storage-vs-session-storage-vs-cookies)
+
+---
+
 ### Refer elements from HTML
 
-* class elements
+* Class Elements
 ```javascript
 var elements = document.getElementsByClassName ('class');
 ```
 
-* id element
+* Id Element
 ```javascript
 var element = document.getElementById ('id');
 ```
 
-* HTML tag
+* HTML Tag
 ```javascript
 var elements = document.getElementsByTagName ('tag');
 ```
 
-* css selector
+* CSS Selector
 ```javascript
 var elements = document.querySelectorAll ('css selector');
 
@@ -39,7 +47,7 @@ var element = document.querySelector ('css selector');
 | __Scope__          | Global or Functional | Block | Block |
 | __Re-declaration__ | __✓__                | X     | X     |
 | __Updation__       | __✓__                | __✓__ | X     |
-| __Initialization__ | with __undefined__   | X     | X     |
+| __Initialization__ | default __undefined__| X     | X     |
 | __Declaration__    | X                    | X     | must be __initialized__ |
 
 ---
