@@ -38,9 +38,9 @@ var element = document.querySelector ('css selector');
 
 ### Difference between var, let and const
 
-> <a href="https://medium.com/nerd-for-tech/var-let-and-const-in-javascript-15e41cf90f01" target="_blank" title="Var, Let, Const in Javascript">Var, Let, Const in Javascript</a>
+> [Var, Let, and Const in Javascript](https://medium.com/nerd-for-tech/var-let-and-const-in-javascript-15e41cf90f01 "Var, Let, Const in Javascript")
 
-> <a href="https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference" target="_blank" title="Var, Let, and Const – What's the Difference?">Var, Let, and Const – What's the Difference?</a>
+> [Var, Let, and Const – What's the Difference?](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference "Var, Let, and Const – What's the Difference?")
 
 |                    | Var                  | Let   | Const |
 |--------------------|:--------------------:|:-----:|:-----:|
@@ -54,4 +54,4 @@ var element = document.querySelector ('css selector');
 
 ### Local Storage vs Session Storage vs Cookies
 
-> <a href="https://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookies" target="_blank" title="difference between localStorage, sessionStorage, and cookies">Storages</a>
+> [Storages](https://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookies "Difference between localStorage, sessionStorage, and cookies")
