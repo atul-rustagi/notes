@@ -6,6 +6,7 @@
 2. [Difference between var, let and const](#difference-between-var-let-and-const)
 3. [Local Storage vs Session Storage vs Cookies](#local-storage-vs-session-storage-vs-cookies)
 4. [Strings in Javascript](#strings-in-javascript)
+5. [Arrays in Javascript](#arrays-in-javascript)
 
 ---
 
@@ -122,4 +123,34 @@ str.endsWith (text); // checks if str ends with text
 str.includes (text); // checks if str includes text
 
 str.split (delimiter); // returns array for string splitted over delimiter
+```
+
+---
+
+### Arrays in Javascript
+
+* Push and Pop
+```javascript
+const arr = [23, 43, 64, 12, 93, 20];
+
+arr.push (num); // push element at end of array
+
+arr.pop (); // pop element from end of array
+```
+
+* Unshift and Shift
+```javascript
+arr.unshift (num); // push element at front of array
+
+arr.shift (); // pop element from front of array
+```
+
+* Splice
+```javascript
+arr.splice (m, n); // removes n elements from index m (inclusive)
+```
+
+* Other
+```javascript
+arr.reverse () // reverse the array
 ```
