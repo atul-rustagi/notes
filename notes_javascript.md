@@ -5,6 +5,7 @@
 1. [Refer elements from HTML](#refer-elements-from-html)
 2. [Difference between var, let and const](#difference-between-var-let-and-const)
 3. [Local Storage vs Session Storage vs Cookies](#local-storage-vs-session-storage-vs-cookies)
+4. [Strings in Javascript](#strings-in-javascript)
 
 ---
 
@@ -73,4 +74,52 @@ localStorage.setItem ("key", item);
 * Converting array to string for local storage
 ```javascript
 let item = JSON.stringify (value);
+```
+
+---
+
+### Strings in Javascript
+
+* String length
+```javascript
+let str = "Some text here";
+
+let len = str.length; // reutrns length of str
+```
+
+* Uppercase
+```javascript
+str.toUpperCase ();
+```
+
+* Lowercase
+```javascript
+str.toLowerCase ();
+```
+
+* Indexing
+```javascript
+str.indexOf ('t'); // returns 1st occurance of 't' else -1
+
+str.lastIndexOf ('t'); // returns last occurance of 't' else -1
+
+str.charAt (n); // returns char at nth index of 0-based index string
+```
+
+* Substring
+```javascript
+str.substring (m, n); // returns str from m to n-1 index
+str.substring (n); // returns str from nth to last index
+
+str.slice (m, n); // same as substring
+str.slice (n); // if n is negative then returns last n char else same as substring
+```
+
+* Other
+```javascript
+str.endsWith (text); // checks if str ends with text
+
+str.includes (text); // checks if str includes text
+
+str.split (delimiter); // returns array for string splitted over delimiter
 ```
