@@ -7,6 +7,7 @@
 3. [Local Storage vs Session Storage vs Cookies](#local-storage-vs-session-storage-vs-cookies)
 4. [Strings in Javascript](#strings-in-javascript)
 5. [Arrays in Javascript](#arrays-in-javascript)
+6. [forEach and for in loop in Javascript](#foreach-and-for-in-loop-in-javascript)
 
 ---
 
@@ -152,5 +153,31 @@ arr.splice (m, n); // removes n elements from index m (inclusive)
 
 * Other
 ```javascript
-arr.reverse () // reverse the array
+arr.reverse (); // reverse the array
+```
+
+---
+
+### forEach and for in loop in Javascript
+
+* forEach loop
+```javascript
+let arr = [5, 2, 5, 6, 9, 1];
+
+arr.forEach (function (element, index, array) {
+    console.log (element, index, array);
+});
+```
+
+* for in loop
+```javascript
+let obj = {
+    name = "Atul Rustagi",
+    age = 23,
+    isActive = true
+}
+
+for (let key in obj) {
+    console.log (`The ${key} of object is ${obj[key]}`);
+}
 ```
