@@ -12,26 +12,26 @@
 
 * Class Elements
 ```javascript
-var elements = document.getElementsByClassName ('class');
+let elements = document.getElementsByClassName ('class');
 ```
 
 * Id Element
 ```javascript
-var element = document.getElementById ('id');
+let element = document.getElementById ('id');
 ```
 
 * HTML Tag
 ```javascript
-var elements = document.getElementsByTagName ('tag');
+let elements = document.getElementsByTagName ('tag');
 ```
 
 * CSS Selector
 ```javascript
-var elements = document.querySelectorAll ('css selector');
+let elements = document.querySelectorAll ('css selector');
 
-var element = document.querySelectorAll ('css selector')[i];
+let element = document.querySelectorAll ('css selector')[i];
 
-var element = document.querySelector ('css selector');
+let element = document.querySelector ('css selector');
 ```
 
 ---
@@ -55,3 +55,22 @@ var element = document.querySelector ('css selector');
 ### Local Storage vs Session Storage vs Cookies
 
 > [Storages](https://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookies "Difference between localStorage, sessionStorage, and cookies")
+
+* Getting items from Local Storage
+```javascript
+let item = localStorage.getItem ("key");
+```
+
+* Converting string received from Local Storage to array
+```javascript
+let value = JSON.parse (item);
+```
+
+* Setting items to Local Storage
+```javascript
+localStorage.setItem ("key", item);
+```
+* Converting array to string for local storage
+```javascript
+let item = JSON.stringify (value);
+```
