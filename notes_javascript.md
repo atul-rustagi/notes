@@ -8,6 +8,8 @@
 4. [Strings in Javascript](#strings-in-javascript)
 5. [Arrays in Javascript](#arrays-in-javascript)
 6. [forEach and for in loop in Javascript](#foreach-and-for-in-loop-in-javascript)
+7. [Events](#events)
+8. [Prototype in Javascript](#prototype-in-javascript)
 
 ---
 
@@ -76,6 +78,11 @@ localStorage.setItem ("key", item);
 * Converting array to string for local storage
 ```javascript
 let item = JSON.stringify (value);
+```
+
+* Removing whole key-value pair from Local Storage
+```javascript
+localStorage.removeItem ("key");
 ```
 
 ---
@@ -180,4 +187,64 @@ let obj = {
 for (let key in obj) {
     console.log (`The ${key} of object is ${obj[key]}`);
 }
+```
+
+---
+
+### Events
+
+* Calling a function on event
+```javascript
+let element = document.getElementById ('some-id');
+
+element.addEventListener ("event", function (e) {
+    // function body
+})
+
+element.addEventListener ("event", (e) => {
+    // function body
+})
+
+element.addEventListener ("event", CallbackFunc);
+
+function CallbackFunc (e) {
+    // function body
+}
+```
+
+* Prevent default behaviour
+```javascript
+element.addEventListener ("event", (e) => {
+    e.preventDefault ();
+})
+```
+
+---
+
+### Prototype in Javascript
+
+* Syntax
+```javascript
+const proto = {
+    changeName: function (newName) {
+        this.name = newName;
+    },
+    changeRole: function (newRole) {
+        this.role = newRole;
+    }
+    // other functions
+}
+
+// this creates object
+const obj = Object.create (proto);
+obj.name = "some name";
+obj.role = "some role";
+
+// this creates object
+const obj = Object.create (proto, {
+    name: {value: "some name", writable: true},
+    role: {value: "some role"}
+})
+
+console.log (obj);
 ```
